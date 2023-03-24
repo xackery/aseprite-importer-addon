@@ -30,7 +30,7 @@ func execute_script(script_path:String, parameters:Dictionary = {}, print_output
 	
 	return res
 
-func load_file(filepath:String, options:Dictionary = {}) -> AsepriteFile:
+func load_file(filepath:String, options:Dictionary = {}) -> RefCounted:
 	var aseprite_path = context.find_aseprite()
 	if aseprite_path == "":
 		return null
